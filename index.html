@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+  crossorigin="anonymous">
+ 
+</head>
+<body>
+
+  <!--menu-->
+  <div class="container">
+    <h1 class="text-center">Carrito</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input id="formulario" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="buscar" class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <hr>
+
+ 
+
+
+  <div class="row" id="contenedor-productos"></div>
+
+  <!---paginacion-->
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">6</a></li>
+      <li class="page-item"><a class="page-link" href="#">7</a></li>
+      <li class="page-item"><a class="page-link" href="#">8</a></li>
+      <li class="page-item"><a class="page-link" href="#">9</a></li>
+      <li class="page-item"><a class="page-link" href="#">10</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="my-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Item</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Acción</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody id="items"></tbody>
+      <tfoot>
+        <tr id="footer-carrito">
+            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <template id="template-footer">
+    <th scope="row" colspan="2">Total productos</th>
+    <td>10</td>
+    <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+            vaciar todo
+        </button>
+    </td>
+    <td class="font-weight-bold">$ <span>5000</span></td>
+</template>
+
+<template id="template-carrito">
+  <tr>
+    <th scope="row">id</th>
+    <td>Ron</td>
+    <td>1</td>
+    <td>
+        <button class="btn btn-info btn-sm">
+            +
+        </button>
+        <button class="btn btn-danger btn-sm">
+            -
+        </button>
+    </td>
+    <td>$ <span>500</span></td>
+  </tr>
+</template>
+
+<div class="row" id="contenedor-productos"></div>
+
+
+</div>
+  </div>
+
+ <!--card-->
+ 
+ <template id="template-productos">
+  <div class="row">
+  <div class=".col-12 col.md-4">  
+    <div class="card" style="width: 18rem;">
+      <img src="" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ENERGETICA MR BIG</h5>
+        <p class="card-text">$<span>1490</span></p>
+        <Button href="#" class="btn btn-dark">Comprar</Button>
+      </div>
+    </div>
+  </div>
+</div>
+</template>
+
+
+  
+
+  
+
+
+  
+
+
+    <script src="./app.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+   
+    
+ 
+
+  
+</body>
+</html>
+
+
+   
